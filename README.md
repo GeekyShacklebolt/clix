@@ -39,15 +39,15 @@ An easy to use clipboard manager made using tkinter.
 		-Your application must be white listed under Enable access for assistive devices. Note that this might require that you package your  	application, since otherwise the entire Python installation must be white listed.
 
   **Note:** Leave this terminal open as long as you want to use **clix**.
-  
+
   Another alternative is to use this command:
 
   ```
   $ nohup clix &
   ```
-  
+
   Now, you can close the terminal but **clix** will keep running.
-  
+
   To close clix, open a terminal and simply run:
 
   ```
@@ -58,10 +58,10 @@ An easy to use clipboard manager made using tkinter.
   And **Ctrl** + **space** again to close it.
   Initially, all clip frames are empty.
 
-- Now, as you copy any text, (using **Ctrl** + **c** keys), the text is saved to 
+- Now, as you copy any text, (using **Ctrl** + **c** keys), the text is saved to
   topmost frame of clix clipboard.
 
-- Whenever you want to paste any clip, just open clix GUI (usin **Ctrl** + 
+- Whenever you want to paste any clip, just open clix GUI (usin **Ctrl** +
   **space** keys) and click on **clip it** button to copy clip text to main clipboard.
 
   Now, simply pressing **Ctrl** + **v** keys will paste the desired clip text!
@@ -72,7 +72,7 @@ An easy to use clipboard manager made using tkinter.
 	```
 
 	You can always use `$ clix -h` command to open this help message:
-	
+
 	```
 	optional arguments:
 	  -h, --help            show this help message and exit
@@ -107,20 +107,18 @@ An easy to use clipboard manager made using tkinter.
 	```
 
 - Install dependencies
-	
+
 	```
 	$ pip install -r requirements.txt
 	```
 
-- Remove the `.` prefix from `.pyxhook` and `.gui` for the following 
-  imports in **clix.py**, so it changes from:
+- Remove the `.` prefix from `.gui` for the following
+  import in **clix.py**, so it changes from:
 	```python
-	from .pyxhook import HookManager
 	from .gui import clipboard
 	```
 	to:
 	```python
-	from pyxhook import HookManager
 	from gui import clipboard
 	```
 

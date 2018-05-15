@@ -6,7 +6,7 @@ clix
 An easy to use clipboard manager made using tkinter.
 
 .. figure:: https://media.giphy.com/media/l0IymVaUaR5xGRQHK/giphy.gif
-   :alt: 
+   :alt:
 
 **Note:** Currently, clix works only on **Linux** systems.
 
@@ -114,19 +114,17 @@ Want to contribute?
 
        $ pip install -r requirements.txt
 
--  Remove the ``.`` prefix from ``.pyxhook`` and ``.gui`` for the
-   following imports in **clix.py**, so it changes from:
+-  Remove the ``.`` prefix from``.gui`` for the
+   following import in **clix.py**, so it changes from:
 
    .. code:: python
 
-       from .pyxhook import HookManager
        from .gui import clipboard
 
    to:
 
    .. code:: python
 
-       from pyxhook import HookManager
        from gui import clipboard
 
 -  To test local version of clix:
